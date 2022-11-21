@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+        section {
+            padding: 100px 0;
+        }
+        .container {
+            /* maximale breedte */
+            max-width: 1000px;
+            /* in het midden van het scherm horizontaal */
+            margin: 0 auto;
+            /* niet plakt aan de zijkant (content) */
+            padding: 0 60px;
+        }
+        p {
+            text-align:justify;
+        }
+        .heading1 {
+            font-size: 6em;
+            line-height: 1.04;
+            font-weight: 900;
+            text-align:center;
+            margin-bottom: 40px;
+            background-image: url(test.gif);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: cover;
+        }
+        .heading1:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="heading1">Text properties are awesome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, aut, nulla atque perspiciatis, cum laborum dicta cumque tempore quod aspernatur hic est reprehenderit error. Assumenda dicta dolorem a voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, aut, nulla atque perspiciatis, cum laborum dicta cumque tempore quod aspernatur hic est reprehenderit error. Assumenda dicta dolorem a voluptates!</p>
+                <a href="lees meer"></a>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>text shadow</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, aut, nulla atque perspiciatis, cum laborum dicta cumque tempore quod aspernatur hic est reprehenderit error. Assumenda dicta dolorem a voluptates!</p>
+                <a href="lees meer"></a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
