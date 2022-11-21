@@ -17,7 +17,7 @@
         body {
             font-size: 1.4rem;
             line-height: 1.4;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             color: blue;
         }
         section {
@@ -40,14 +40,21 @@
             font-weight: 900;
             text-align:center;
             margin-bottom: 40px;
+
+            transition: all 2s ease-in-out;
+        }
+        .heading1:hover {
+            transform: rotate(360deg);
             background-image: url(test.gif);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-size: cover;
         }
-        .heading1:hover {
-            transform: rotate(360deg);
+        .heading2 {
+            color: red;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px black;
         }
     </style>
 </head>
@@ -62,9 +69,15 @@
         </section>
         <section>
             <div class="container">
-                <h2>text shadow</h2>
+                <h2 class="heading2">text shadow</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, aut, nulla atque perspiciatis, cum laborum dicta cumque tempore quod aspernatur hic est reprehenderit error. Assumenda dicta dolorem a voluptates!</p>
                 <a href="lees meer"></a>
+            </div>
+        </section>
+        <section>
+            <div class="fontpair-wrapper pair1">
+                <h2>Step into van Gogh's world</h2>
+                <p>Vincent Willem van Gogh was a Dutch Post-Impressionist painter who posthumously became one of the most famous and influential figures in Western art history. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of which date from the last two years of his life.</p>
             </div>
         </section>
     </main>
