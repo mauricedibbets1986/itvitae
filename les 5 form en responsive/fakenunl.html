@@ -15,8 +15,12 @@
             border: none;
             outline: none;
         }
+        html {
+            font-size: 62.5%;
+        }
         body {
             background-color: #C4C8FF;
+            font-size: 1.6rem;
         }
         header {
             padding: 14px 0;
@@ -31,7 +35,7 @@
         .container {
             width: 100%;
             margin: 0 auto;
-            max-width: 980px;
+            max-width: 1200px;
             padding: 0 80px;
         }
         .header-flex {
@@ -58,17 +62,42 @@
 
         /* text styling */
         h1,h2,h3,h4,h5,h6 {
-
+            font-family: Poppins, Helvetica, sans-serif;
+            font-weight: 800;
+            line-height: 1.04;
+        }
+        h1 {
+            font-size: 6rem;
+        }
+        h2 {
+            font-size: 4rem;
+        }
+        h3 {
+            font-size: 3.2rem;
         }
 
         /* main content */
         .news-headline {
-
+            width: 100%;
+            height: 42vh;
+            position: relative;
+            border-radius: 32px;
+            overflow: hidden;
         }
         .news-headline > img {
-
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .news-headline > h2 {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            color: white;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         }
 
+        
 
     </style>
 </head>
@@ -92,9 +121,42 @@
                 <div class="main-flex">
                     <div class="main-left">
                         <div class="news-headline">
-                            <img src="" alt="">
+                            <img src="img/space.webp" alt="Afbeelding: ruimte nieuwe planeet">
                             <h2>New planet discovered lorem ipsum</h2>
                         </div>
+                        <section>
+                            <h2>ander nieuws</h2>
+                            <div class="ander-nieuws-flex">
+                                <div class="ander-nieuws__item">
+                                    <div class="ander__img-wrapper">
+                                        <img src="" alt="">
+                                    </div>
+                                    <h3>Een leuke nieuws titel hier plaatsen!</h3>
+                                    <a href="">Lees meer</a>
+                                </div>
+                                <div class="ander-nieuws__item">
+                                    <div class="ander__img-wrapper">
+                                        <img src="" alt="">
+                                    </div>
+                                    <h3>Een leuke nieuws titel hier plaatsen!</h3>
+                                    <a href="">Lees meer</a>
+                                </div>
+                                <div class="ander-nieuws__item">
+                                    <div class="ander__img-wrapper">
+                                        <img src="" alt="">
+                                    </div>
+                                    <h3>Een leuke nieuws titel hier plaatsen!</h3>
+                                    <a href="">Lees meer</a>
+                                </div>
+                                <div class="ander-nieuws__item">
+                                    <div class="ander__img-wrapper">
+                                        <img src="" alt="">
+                                    </div>
+                                    <h3>Een leuke nieuws titel hier plaatsen!</h3>
+                                    <a href="">Lees meer</a>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                     <div class="main-right"></div>
                 </div>
