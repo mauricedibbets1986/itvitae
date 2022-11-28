@@ -79,6 +79,9 @@
 
         .main-right {
             width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
         }
 
         /* text styling */
@@ -163,6 +166,29 @@
             display: block;
             text-align: right;
         }
+
+        .aside-content {
+
+        }
+
+        .aside-content > ul {
+            padding: 0;
+        }
+
+        .aside-content > ul > li {
+            display: flex;
+            padding-bottom: 6px;
+            align-items: center;
+        }
+
+        .aside-h3 {
+            margin-right: 16px;
+        }
+
+        .main-right h2 {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 
@@ -234,6 +260,7 @@
                     </div>
                     <div class="main-right">
                         <div class="aside-content">
+                            <h2>Nieuw binnen</h2>
                             <ul>
                                 <li>
                                     <h3 class="aside-h3">12:40</h3>
@@ -254,9 +281,10 @@
                             </ul>
                         </div>
                         <div class="aside-content">
-                            <img src="" alt="">
+                            <img src="img/ad.jfif" alt="">
                         </div>
                         <div class="aside-content">
+                            <h2>Meest gelezen nieuws</h2>
                             <ul>
                                 <li>
                                     <h3 class="aside-h3">1</h3>
