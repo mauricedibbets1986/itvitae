@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,16 +16,30 @@
             border: none;
             outline: none;
         }
+
+        img {
+            max-width: 100%;
+        }
+
         html {
             font-size: 62.5%;
         }
+
         body {
             background-color: #C4C8FF;
             font-size: 1.6rem;
         }
+
         header {
             padding: 14px 0;
         }
+
+        section {
+            padding: 40px 0;
+        }
+
+
+
         .page-wrapper {
             width: 100%;
             margin: 0 auto;
@@ -32,20 +47,24 @@
             background-color: white;
             min-height: 100vh;
         }
+
         .container {
             width: 100%;
             margin: 0 auto;
             max-width: 1200px;
             padding: 0 80px;
         }
+
         .header-flex {
             display: flex;
             justify-content: space-between;
         }
+
         .header-flex__right {
             display: flex;
         }
-        .header-flex__right > p {
+
+        .header-flex__right>p {
             padding: 0 6px;
         }
 
@@ -53,27 +72,37 @@
             display: flex;
             gap: 80px;
         }
+
         .main-left {
             width: 60%;
         }
+
         .main-right {
             width: 40%;
         }
 
         /* text styling */
-        h1,h2,h3,h4,h5,h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: Poppins, Helvetica, sans-serif;
             font-weight: 800;
             line-height: 1.04;
         }
+
         h1 {
             font-size: 6rem;
         }
+
         h2 {
             font-size: 4rem;
         }
+
         h3 {
-            font-size: 3.2rem;
+            font-size: 1.8rem;
         }
 
         /* main content */
@@ -84,12 +113,14 @@
             border-radius: 32px;
             overflow: hidden;
         }
-        .news-headline > img {
+
+        .news-headline>img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .news-headline > h2 {
+
+        .news-headline>h2 {
             position: absolute;
             bottom: 40px;
             left: 40px;
@@ -97,10 +128,44 @@
             text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
         }
 
-        
+        .ander-nieuws-flex {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -18px;
+        }
 
+        .ander-nieuws__item {
+            width: 50%;
+            padding: 18px;
+        }
+
+        .ander__img-wrapper {
+            width: 100%;
+            height: 168px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .ander__img-wrapper>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ander-nieuws__item>h3 {
+            margin-bottom: 8px;
+        }
+
+        .ander-nieuws__item>a {
+            color: cornflowerblue;
+            text-decoration: none;
+            display: block;
+            text-align: right;
+        }
     </style>
 </head>
+
 <body>
     <div class="page-wrapper">
         <header>
@@ -115,7 +180,7 @@
                 </div>
             </div>
         </header>
-        
+
         <main>
             <div class="container">
                 <div class="main-flex">
@@ -124,33 +189,42 @@
                             <img src="img/space.webp" alt="Afbeelding: ruimte nieuwe planeet">
                             <h2>New planet discovered lorem ipsum</h2>
                         </div>
+
+
                         <section>
                             <h2>ander nieuws</h2>
                             <div class="ander-nieuws-flex">
                                 <div class="ander-nieuws__item">
                                     <div class="ander__img-wrapper">
-                                        <img src="" alt="">
+                                        <img src="img/kremlin.jpg" alt="">
                                     </div>
                                     <h3>Een leuke nieuws titel hier plaatsen!</h3>
                                     <a href="">Lees meer</a>
                                 </div>
                                 <div class="ander-nieuws__item">
                                     <div class="ander__img-wrapper">
-                                        <img src="" alt="">
+                                        <img src="img/jpe.webp" alt="">
                                     </div>
                                     <h3>Een leuke nieuws titel hier plaatsen!</h3>
                                     <a href="">Lees meer</a>
                                 </div>
                                 <div class="ander-nieuws__item">
                                     <div class="ander__img-wrapper">
-                                        <img src="" alt="">
+                                        <img src="img/musk.jfif" alt="">
                                     </div>
                                     <h3>Een leuke nieuws titel hier plaatsen!</h3>
                                     <a href="">Lees meer</a>
                                 </div>
                                 <div class="ander-nieuws__item">
                                     <div class="ander__img-wrapper">
-                                        <img src="" alt="">
+                                        <img src="img/rutte.jfif" alt="">
+                                    </div>
+                                    <h3>Een leuke nieuws titel hier plaatsen!</h3>
+                                    <a href="">Lees meer</a>
+                                </div>
+                                <div class="ander-nieuws__item">
+                                    <div class="ander__img-wrapper">
+                                        <img src="img/leslie.jpg.crdownload" alt="">
                                     </div>
                                     <h3>Een leuke nieuws titel hier plaatsen!</h3>
                                     <a href="">Lees meer</a>
@@ -158,10 +232,55 @@
                             </div>
                         </section>
                     </div>
-                    <div class="main-right"></div>
+                    <div class="main-right">
+                        <div class="aside-content">
+                            <ul>
+                                <li>
+                                    <h3 class="aside-h3">12:40</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">12:40</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">12:40</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">12:40</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside-content">
+                            <img src="" alt="">
+                        </div>
+                        <div class="aside-content">
+                            <ul>
+                                <li>
+                                    <h3 class="aside-h3">1</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">2</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">3</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                                <li>
+                                    <h3 class="aside-h3">4</h3>
+                                    <p>Een nieuwsitem super leuk om te lezen. Jazeker.....</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>
