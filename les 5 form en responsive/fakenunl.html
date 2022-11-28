@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            border: none;
+            outline: none;
+        }
+        body {
+            background-color: #C4C8FF;
+        }
+        header {
+            padding: 14px 0;
+        }
+        .page-wrapper {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1400px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 980px;
+            padding: 0 80px;
+        }
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-flex__right {
+            display: flex;
+        }
+        .header-flex__right > p {
+            padding: 0 6px;
+        }
+
+        .main-flex {
+            display: flex;
+            gap: 80px;
+        }
+        .main-left {
+            width: 60%;
+        }
+        .main-right {
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <div class="header-flex">
+                    <div class="header-flex__left">Maandag, 28 November 2022</div>
+                    <div class="header-flex__right">
+                        <p>10°C</p>
+                        <p>bewolkt</p>
+                        <p>windkracht 10</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="main-flex">
+                    <div class="main-left">
+                        <div class="news-headline">
+                            <img src="" alt="">
+                            <h2>New planet discovered lorem ipsum</h2>
+                        </div>
+                    </div>
+                    <div class="main-right"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
