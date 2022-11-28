@@ -54,7 +54,33 @@
     </main>
 
     <script>
-        
+        const username = document.getElementById('usernamejs');
+        const password = document.getElementById('passwordjs');
+        const form = document.getElementById('formjs');
+        const errorElement = document.getElementById('error');
+
+        form.addEventListener('submit', (e) => {
+            let messages = [];
+            if (username.value === '' || username.value == null) {
+                messages.push('Name is required');
+            }
+            if (password.value.length < 6) {
+                messages.push('password must be 6 or more characters');
+            }
+            if (password.value.length > 20) {
+                messages.push('password must be less or equal to 20 characters');
+            }
+
+            if (password.value == 'password') {
+                messages.push('password can not be equal to "password"');
+            }
+
+            console.log(messages.length);
+            if (messages.length > 0) {
+                e.preventDefault();
+                errorElement.innerText = messages.join('\n');
+            }
+        })
     </script>
 </body>
 </html>
